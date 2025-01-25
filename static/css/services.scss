@@ -1,0 +1,120 @@
+
+/* Default styles for larger screens */
+.service-grid-wrapper {
+  margin: 6em 0;
+}
+.service-grid-wrapper > h1 {
+  margin-left: 1em;
+}
+
+.service-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.service-card {
+  background-color: #fff;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  gap: 2rem;
+  padding: 2.2rem;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-image {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.service-card button {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  transform: translateY(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .service-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .service-card {
+    margin-bottom: 1rem;
+  }
+
+  .service-card-content {
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 1rem;
+  }
+
+  .service-card-content {
+    padding: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+}

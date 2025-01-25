@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --root-padding: 0 3em;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.main-content-section {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: block;
+  padding: var(--root-padding);
+  margin: 0;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 1rem; 
+}
+
+// h1 {
+//   font-size: 2.5rem;
+//   color: #333;
+//   margin-bottom: 1.5rem;
+// }
+
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+  :root {
+    --root-padding: 0 10px;
+  }
+}

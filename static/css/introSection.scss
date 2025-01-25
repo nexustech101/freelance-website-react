@@ -1,0 +1,118 @@
+.intro-section {
+  padding: 3.5em 2.5em;
+  border-radius: 10px;
+}
+
+/* Top Section Styles */
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  gap: 2rem; /* Add consistent spacing between cards */
+}
+
+.feature-card {
+  padding: 1.5em; /* More padding for desktop */
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 30%; /* Ensure cards take up equal space */
+  border-radius: 10px;
+}
+
+.feature-card-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.pixel-perfect-icon {
+  background-color: #34eb7d;
+}
+
+.high-quality-icon {
+  background-color: #4caf50;
+}
+
+.creative-ui-icon {
+  background-color: #ffc107;
+}
+
+/* Hero Section Styles */
+.hero-section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5em;
+  padding-right: 4em;
+}
+
+.hero-section-2 img {
+  max-width: 100%; /* Adjust image size for desktop */
+  height: auto;
+  border-radius: 10px; /* Optional: Add border-radius for better visuals */
+}
+
+.hero-section-img {
+  max-width: 100%; /* Adjust image size for desktop */
+  height: auto;
+  border-radius: 10px; /* Optional: Add border-radius for better visuals */
+}
+
+
+.hero-text-2 {
+  max-width: 50%;
+  padding-left: 4em; /* Add padding for separation on desktop */
+}
+
+.hero-text-2 h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1em;
+}
+
+.hero-text-2 p {
+  padding: 1em 0;
+  font-size: 1.1rem; /* Slightly larger text for readability */
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-container {
+    flex-direction: column;
+    gap: 1.5rem; /* Adjust spacing for stacked cards */
+  }
+
+  .feature-card {
+    flex: 1 1 auto; /* Allow cards to adjust naturally */
+    padding: 1em;
+  }
+
+  .hero-section-2 {
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .hero-text-2 {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .hero-text-2 p {
+    text-align: justify;
+  }
+
+  .hero-section-2 img {
+    max-width: 100%; /* Make the image full width on mobile */
+    margin-bottom: 1em;
+  }
+}
