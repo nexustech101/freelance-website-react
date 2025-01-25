@@ -29,6 +29,7 @@ dist-ssr
 /node_modules
 /.pnp
 .pnp.js
+/public/pdfs
 
 # testing
 /coverage
