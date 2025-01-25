@@ -111,10 +111,10 @@ const NavBar = () => {
         </div>
         <ul className="navbar-links">
           <li>
-            <a href="/about">📧 charlesldefreeseiii@gmail.com</a>
+            <a href="/about">📧 My Email Here</a>
           </li>
           <li>
-            <a href="/pricing">📱 +1(814)-434-6477</a>
+            <a href="/pricing">📱 555-555-5555</a>
           </li>
           <li>
             <a href="/faq">FAQ</a>
