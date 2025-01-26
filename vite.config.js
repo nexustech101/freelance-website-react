@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:8000', // Relative route for backend api
+      '/api': 'http://localhost:8000', // Relative routing for backend api
     },
   },
   resolve: {

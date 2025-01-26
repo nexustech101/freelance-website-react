@@ -8,9 +8,6 @@ import FeatureBanner from "./components/FeatureBanner";
 import ContactForm from "./components/ContactForm";
 import MainContent from "./components/MainContent";
 import ChatModal from "./components/ChatModal";
-import Skills from "./components/Skills";
-import ResumePDF from "./components/ResumePDF";
-import ParticleCanvas from "./components/ParticalCanvas";
 import IntroSection from "./components/IntroSection"
 
 const App = () => {
@@ -19,11 +16,9 @@ const App = () => {
     <div className='root'>
       <NavBar />
       <Hero />
-      <ResumePDF />
       <MainContent>
         <br />
         <FeatureBanner />
-        <div style={{ margin: "2.5em 0" }}></div>
         <ServiceCardGrid />
         <IntroSection />
         <ContactForm />
