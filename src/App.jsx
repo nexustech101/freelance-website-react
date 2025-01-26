@@ -21,14 +21,12 @@ const App = () => {
       <Hero />
       <ResumePDF />
       <MainContent>
-        <ParticleCanvas color={"green"} />
         <br />
         <FeatureBanner />
         <div style={{ margin: "2.5em 0" }}></div>
         <ServiceCardGrid />
         <IntroSection />
         <ContactForm />
-        <ParticleCanvas />
       </MainContent>
       <Footer />
       <ChatModal />
