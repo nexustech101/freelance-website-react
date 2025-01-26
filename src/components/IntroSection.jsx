@@ -8,6 +8,7 @@ const IntroSection = () => {
   const [pixelRef, pixelIsIntersecting] = useIntersectionObserver({ threshold: 0.5 });
   const [qualityRef, qualityIsIntersecting] = useIntersectionObserver({ threshold: 0.5 });
   const [uiRef, uiIsIntersecting] = useIntersectionObserver({ threshold: 0.5 });
+  const [articleRef, articleIsIntersecting] = useIntersectionObserver({ threshold: 0.5 });
 
   return (
     <div className='intro-section text-gray-800'>
@@ -63,7 +64,12 @@ const IntroSection = () => {
       </div>
 
       {/* Bottom Section with Hero Image and Content */}
-      <div className='hero-section-2'>
+      <div
+        ref={articleRef}
+        className={`fade-section hero-section-2 ${
+          articleIsIntersecting ? "fade-in" : "fade-out"
+        }`}
+      >
         <div>
           <img src={image} alt='Team collaboration' />
           {/* <ImageToParticles
