@@ -32,20 +32,22 @@ const CheckListIconSection = () => {
 
 const Hero = () => {
   return (
-    <div className="hero-section">
+    <div className='hero-section'>
       <ParticleCanvas />
-      <div className="img-container-right">
-        <img src={heroIcon} alt="..." />
-      </div>
-      <header className="hero-header">
-        <span className="hero-text">
+      <header className='hero-header'>
+        <span className='hero-text'>
           <h1>Call Your Goals InTo Action With Guaranteed Results</h1>
         </span>
-        <CheckListIconSection />
-        <div className="btn-panel">
+        {/* <CheckListIconSection /> */}
+        <br />
+        <br />
+        <div className='btn-panel'>
           <ContactFormModal text={"Get Connected"} width={"100%"} />
         </div>
       </header>
+      <div className='img-container-right'>
+        <img src={heroIcon} alt='...' />
+      </div>
     </div>
   );
 };

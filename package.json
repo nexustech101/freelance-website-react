@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@paypal/react-paypal-js": "^8.5.0",
+    "@radix-ui/react-navigation-menu": "^1.2.4",
     "@react-pdf-viewer/core": "^3.12.0",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
@@ -25,7 +26,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.15.1",
-    "react-router-dom": "^6.26.0",
+    "react-router-dom": "^6.28.2",
     "reactstrap": "^9.2.2"
   },
   "devDependencies": {

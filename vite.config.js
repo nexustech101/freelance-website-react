@@ -13,6 +13,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve("frontend", "./src"),
+      // "@": path.resolve(__dirname, "./src"),
     },
   },
 });
